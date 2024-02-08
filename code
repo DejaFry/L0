@@ -22,7 +22,7 @@ module layerzero::admin {
             error::permission_denied(EADMIN_NOT_AUTHORIZED)
         );
 
-        config.admin = new_admin;
+        config.admin = admin;
     }
 
     public fun is_config_admin(account: address): bool acquires Config {
