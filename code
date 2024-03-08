@@ -30,10 +30,7 @@ module layerzero::admin {
         account == config.admin
     }
 
-    public fun assert_config_admin(account: &signer) acquires Config {
-        assert!(
-            is_config_admin(address_of(account)),
-            error::permission_denied(EADMIN_NOT_AUTHORIZED)
+   
         );
     }
 
