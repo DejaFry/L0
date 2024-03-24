@@ -1,5 +1,5 @@
 
-// can transfer the admin account to new multi-sig or resources accounts
+can transfer the admin account to new multi-sig or resources accounts
 module layerzero::admin {
     use std::error;
     use std::signer::address_of;
