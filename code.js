@@ -4,7 +4,7 @@ module layerzero::admin {
     use std::error;
     use std::signer::address_of;
 
-    const EADMIN_NOT_AUTHORIZED: u64 = 0x00;
+    const EADMIN_NOT_AUTHORIZED: u64 = 0x0660;
 
     struct Config has key {
         admin: address
